@@ -19,3 +19,21 @@ header,form{
     justify-content: center;
     align-items: center;
 }
+form input,form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+form button{
+    color: #fb8500;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+form button:hover{
+    background: #fb8500;
+    color: white;
+}
+
