@@ -24,7 +24,7 @@ function addTodo(event) {
     //create Li and add it to the above Div
     const newTodo = document.createElement('li');
     newTodo.classList.add('todo-item');
-    newTodo.innerText = 'hey';
+    newTodo.innerText = todoInput.value;
     todoDiv.appendChild(newTodo);
 
     //create check mark button beside the text
@@ -45,6 +45,9 @@ function addTodo(event) {
     //Append the whole DIV to the UL
 
     todoList.appendChild(todoDiv);
+
+    //clear input text after adding to the UL
+    todoInput.value = '';
 
 
 
