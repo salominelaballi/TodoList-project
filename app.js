@@ -39,8 +39,8 @@ function addTodo(event) {
     //create trash button beside the check button
 
     const trashButton = document.createElement('button');
-    trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     trashButton.classList.add('trash-btn');
+    trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     todoDiv.appendChild(trashButton);
 
     //Append the whole DIV to the UL
@@ -56,8 +56,10 @@ function deleteCheck(e) {
     const item = e.target;
 
     //delete the item
-
-    console.log(item.classList)
+    if (item.classList[0] === "trash-btn") {
+        const todo = item.parentElement
+        todo.remove();
+    }
 
 
 }
