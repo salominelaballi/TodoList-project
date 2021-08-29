@@ -8,6 +8,7 @@ const todoList = document.querySelector('.todo-list');
 //Event listeners when button is clicked
 
 todoButton.addEventListener('click', addTodo);
+todoList.addEventListener('click', deleteCheck);
 
 
 //Functions
@@ -48,9 +49,15 @@ function addTodo(event) {
 
     //clear input text after adding to the UL
     todoInput.value = '';
+}
 
+function deleteCheck(e) {
+    //grab the item user clicks
+    const item = e.target;
 
+    //delete the item
 
+    console.log(item.classList)
 
 
 }

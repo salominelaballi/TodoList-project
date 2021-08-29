@@ -70,6 +70,7 @@ form button:hover{
     background: #2a9d8f;
 }
 .todo-item{
-    color: black;
+    padding: 0rem 0.5rem;
 }
+
 
